@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}   
+iframe,canvas {
+
+    margin: 0 auto;
+    display:block;
+}
+.chess_board {
+
+    margin: 0 auto;
+    display:block;
+}
+th, td {
+    padding: 10px;
+}
+
+html *
+{
+
+    font-family: Arial !important;
+}
+body{
+background-image: linear-gradient(to right, #5bb760, #65b753, #70b745, #7cb636, #88b524);
+
+}
+</style>
+</head>
+<body>
+    <h1><b>Chess</b></h1>
+    <p>Chess is a recreational and competitive board game played between two players. It is sometimes called Western or international chess to distinguish it from related games such as xiangqi.<br><a href="https://en.wikipedia.org/wiki/Chess"><h5>Read more about chess</a></h5></p>
+    <h2><i>Principles</i></h2>
+    <ol>
+        <li>Keep King safe.</li>
+        <li>Control the center.</li>
+        <li>Find open files for Rooks.</li>
+    </ol>  
+    <h2>Advantages of playing chess</h2>
+    <dl>
+        <dt><h3><b>Chess increases your intelligence</b></h3></dt>
+        <dd>- 
+        People with lots of experience playing chess have highly developed thinking abilities in two areas (in addition to memory skills):
+        <ul>
+            <li><h4><b>Fluid intelligence</b></h4> This is the ability to consider new kinds of problems and use reasoning to solve them.</li>
+            <li><h4><b>Processing speed</b></h4> This is the ability to swiftly comprehend tasks and respond efficiently to challenges.</li>
+        </ul>
+        </dd>
+        
+        <dt><h3><b>Chess enables you to enter a flow state</b></h3></dt>
+        <dd>- Flow is a deeply rewarding sense of total involvement, in which you’re operating at a peak performance level in a challenging task. Athletes, artists, and performers often describe entering a kind of time warp, where they are so wholly focused on the task at hand that their awareness of anything beyond the performance seems to disappear.</dd>
+    </dl>
+    <br>
+    <hr>
+    <iframe src="https://en.wikipedia.org/wiki/Chess" name="chess_iframe"  width="85%" height="300px" style="border:1px solid black;">
+    </iframe>
+    <h1>Chess Board</h1>
+    <img class="chess_board" id="chess" src="chess.png" usemap="#chessmap" alt="Chess Board" width="720" height="720"> 
+    <map name="chessmap">
+        <area shape="rect" coords="2,2,90,92" alt="elephant" target="chess_iframe" href="https://en.wikipedia.org/wiki/Alfil">
+        <area shape="rect" coords="91,2,180,91" alt="knight" target="chess_iframe" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+        <area shape="rect" coords="181,2,270,91" alt="Bishop" target="chess_iframe" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+        <area shape="rect" coords="271,2,360,92" alt="queen" target="chess_iframe" href="https://en.wikipedia.org/wiki/Queen_(chess)">
+        <area shape="rect" coords="361,2,450,91" alt="king" target="chess_iframe" href="https://en.wikipedia.org/wiki/King_(chess)">
+
+        <area shape="rect" coords="451,2,540,91" alt="Bishop" target="chess_iframe" href="https://en.wikipedia.org/wiki/Bishop_(chess)">
+        <area shape="rect" coords="541,2,630,91" alt="knight" target="chess_iframe" href="https://en.wikipedia.org/wiki/Knight_(chess)">
+        <area shape="rect" coords="631,2,720,91" alt="elephant" target="chess_iframe" href="https://en.wikipedia.org/wiki/Alfil">
+        <area shape="rect" coords="0,92,720,182" alt="pawn" target="chess_iframe" href="https://en.wikipedia.org/wiki/Pawn_(chess)">
+        
+        <!--<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">-->
+    </map>
+    <br>
+    <hr>
+
+    <h2>Creator of Chess (Sissa Ben Dahir)</h2>
+    <img hidden id="creator" src="creator.jpg" alt="creator of chess"> 
+
+    <p><button onclick="myCanvas()">Click to reveal Mythical character</button></p>
+
+    <canvas id="myCanvas" width="720" height="720"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+        
+        
+
+    <script>
+        function myCanvas() {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("creator");
+        ctx.drawImage(img,0,0,720,750);
+        }
+    </script>
+
+    <br>
+    <table style="width:100%">
+        <caption><span style="color:green;font-weight:bold"><h1>Competition Participants</h1></span></caption>
+        <tr>
+            <th>ID</th>
+            <th>Photo</th>  
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Matches Won</th>
+            <th>Matches Lost</th>
+            <th>Matches Played</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th><a href="https://www.facebook.com"><img src="https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg" alt="Girl in a jacket" width="50" height="60"></a></th>
+            <th>Jack</th>
+            <th>West</th>
+            <th>23</th>
+            <th>3</th>
+            <th>2</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th><a href="https://www.facebook.com"><img src="https://qph.fs.quoracdn.net/main-qimg-09f503c9ab605614ac40ea0dcca4d30a" alt="Girl in a jacket" width="50" height="60"></a></th>
+            <th>Damien </th>
+            <th>Braun</th>
+            <th>26</th>
+            <th>4</th>
+            <th>1</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th><a href="https://www.facebook.com"><img src="https://i.pinimg.com/originals/de/64/80/de64801f0275c1ab2ea5a9e2bb3ce7bc.jpg" alt="Girl in a jacket" width="50" height="60"></a></th>  
+            <th>Ellie </th>
+            <th>Osborne</th>
+            <th>23</th>
+            <th>2</th>
+            <th>3</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th><a href="https://www.facebook.com"><img src="https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-01.jpg" alt="Girl in a jacket" width="50" height="60"></a></th>  
+            <th>Cierra </th>
+            <th>Vega</th>
+            <th>22</th>
+            <th>4</th>
+            <th>2</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th><a href="https://www.facebook.com"><img src="https://cdn-images-1.medium.com/max/1200/1*NpUUls7kjn9JhO4ChjGV7w.png" alt="Girl in a jacket" width="50" height="60"></a></th>  
+            <th>Alden </th>
+            <th>Cantrell</th>
+            <th>25</th>
+            <th>1</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+    </table>
+
+</body>
+</html>
