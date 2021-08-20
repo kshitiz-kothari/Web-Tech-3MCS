@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box; 
+}
+.header {
+  overflow: hidden;
+  background-color: #002b50;
+  padding: 20px 10px;
+  
+}
+body{
+    background-color: #15426a;
+    color: rgb(255, 255, 255);
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+ 
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #002b50;
+  padding: 10px;
+  color:#ccc;
+}
+
+.container_song {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  color:#ccc;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.song_name{
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%; 
+  background-color: rgb(111, 136, 153); 
+  color: black; 
+  margin-top: 5px; 
+  padding: 1px; 
+  text-indent: 5px;
+  border-radius: 5px;
+
+}
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left{
+    max-width: 100px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+audio { width: 100%; }
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="Amazon-Symbol.jpg" href="#default"   height="60px"  width="120px" class="logo">
+  <div class="header-right">
+    <a  href="index.html">Form</a>
+    <a  class="active" href="audio.html">Audio</a>
+    <a  href="video.html">Video</a>
+  </div>
+</div>
+
+<!-- <div style="padding-left:20px">
+  <h1>Responsive Header</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>Some content..</p>
+</div> -->
+
+<br>
+<div class="container" >
+    <img src="folklore.png" class="" style="display: block; height: auto;  width: auto; margin-right: auto; margin-left: auto;" alt="" >
+    <h1 style="text-align: center; ">Album Folklore</h1>
+    <h3 style="text-align: center;"> By taylor swift</h3>
+    <span class="" style="display: flex; margin-top: 15px; ">
+    <audio autoplay="autoplay" id="playing_audio" controls>
+        
+        <source src="audio1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </span>
+    <br>
+
+    <h2 style="text-align: center;">Songs</h2>
+    <span onclick="document.getElementById('playing_audio').src='audio1.mp3'">
+      <div class="song_name">
+
+        <h3>Exile</h3>
+      </div>
+    </span>
+    
+    <span onclick="document.getElementById('playing_audio').src='audio2.mp3'">
+      <div class="song_name">
+        <h3>August</h3>
+      </div>
+    </span>
+    <span onclick="document.getElementById('playing_audio').src='audio3.mp3'">
+      <div class="song_name">
+        <h3>Hoax</h3>
+      </div>
+    </span>
+    <span onclick="document.getElementById('playing_audio').src='audio4.mp3'">
+      <div class="song_name" >
+        <h3>This is me trying</h3>
+      </div>
+    </span>
+    <span onclick="document.getElementById('playing_audio').src='audio5.mp3'">
+      <div class="song_name">
+        <h3>Peace</h3>
+      </div>
+    </span>
+    
+    
+
+</div>
+
+</body>
+</html>
