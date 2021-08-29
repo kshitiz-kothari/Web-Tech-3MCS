@@ -1,0 +1,41 @@
+.container_song {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    color:#ccc;
+  }
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a:link {
+    text-decoration: none;
+    background-color: rgb(15, 228, 97);
+  }
+  
+  a:visited {
+    text-decoration: none;
+    background-color: cyan;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
