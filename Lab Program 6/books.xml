@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "bookstype.dtd">
+<?xml-stylesheet type="text/css" href="Rule.css"?>
+<books>
+<book bid="1">
+    <name>Junior Level Books Introduction to Computer</name>
+    <author>Amit Garg</author>
+    <genre>Computer Science</genre>
+    <publisher>Reader's Zone</publisher>
+    <published_year>2011</published_year>
+</book>
+<book bid="2">
+    <name>CBOT</name>
+    <author>Amit Garg</author>
+    <genre>Computer Science</genre>
+    <publisher>K Nath  Sons, Meerut</publisher>
+    <published_year>2012</published_year>
+</book>
+<book bid="3">
+    <name>Data Structure Using C</name>
+    <author>Lalit Kumar</author>
+    <genre>Computer Science</genre>
+    <publisher>Thakur Publications Lucknow</publisher>
+    <published_year>2011</published_year>
+</book>
+<book bid="4">
+    <name>Mobile Computing</name>
+    <author>Vinay Kumar Singhal</author>
+    <genre>Computer Science</genre>
+    <publisher>Sun India Publications, New Delhi</publisher>
+    <published_year>2015</published_year>
+</book>
+<book bid="5">
+    <name>Client Server Computing</name>
+    <author>Sharad Kumar Verma</author>
+    <genre>Education</genre>
+    <publisher>Sun India Publications, New Delhi</publisher>
+    <published_year>2017</published_year>
+</book>
+</books>
