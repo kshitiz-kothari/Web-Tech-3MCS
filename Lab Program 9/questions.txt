@@ -1,0 +1,5 @@
+What are tags and attributes in HTML?
+What are different types of lists in HTML?
+Describe HTML layout structure.
+What are the various formatting tags in HTML?
+What are the different kinds of Doctypes available?
